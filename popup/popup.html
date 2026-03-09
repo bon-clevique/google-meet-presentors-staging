@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Meet Presenter Switch</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <h1>Meet Presenter Switch</h1>
+      <div class="meet-code-display">
+        <span class="label">Meet:</span>
+        <span id="meet-code">未接続</span>
+      </div>
+    </header>
+
+    <section class="input-section">
+      <div class="input-row">
+        <input type="text" id="presenter-name" placeholder="発表者名">
+        <input type="url" id="presenter-url" placeholder="資料 URL">
+        <select id="presenter-type">
+          <option value="tab">Tab</option>
+          <option value="slides">Slides</option>
+        </select>
+      </div>
+      <button id="add-btn" class="btn-add">+ 追加</button>
+    </section>
+
+    <section class="list-section">
+      <div id="presenter-list"></div>
+    </section>
+
+    <footer class="popup-footer">
+      <button id="save-btn" class="btn-primary" disabled>保存</button>
+      <span id="status-msg" class="status-msg"></span>
+    </footer>
+  </div>
+  <script src="../shared/types.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
