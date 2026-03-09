@@ -1,0 +1,141 @@
+#mps-floating-panel {
+  position: fixed;
+  z-index: 9999;
+  top: 80px;
+  right: 20px;
+  width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  font-size: 13px;
+  color: #202124;
+  overflow: hidden;
+}
+
+.mps-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: #1a73e8;
+  color: white;
+  cursor: grab;
+  user-select: none;
+}
+
+.mps-title {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.mps-minimize {
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+}
+
+.mps-minimize:hover {
+  opacity: 0.8;
+}
+
+.mps-body {
+  padding: 12px 14px;
+}
+
+.mps-current,
+.mps-next {
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+#mps-current-name {
+  color: #1a73e8;
+}
+
+#mps-switch-btn,
+.mps-btn-primary {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#mps-switch-btn:hover,
+.mps-btn-primary:hover {
+  background: #1557b0;
+}
+
+#mps-switch-btn:disabled,
+.mps-btn-primary:disabled {
+  background: #dadce0;
+  color: #80868b;
+  cursor: not-allowed;
+}
+
+#mps-presenter-list {
+  margin-top: 4px;
+}
+
+.mps-presenter-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #e8eaed;
+}
+
+.mps-presenter-item:last-child {
+  border-bottom: none;
+}
+
+.mps-presenter-item.active {
+  background: #e8f0fe;
+  border-radius: 6px;
+  padding: 6px 8px;
+}
+
+.mps-status-icon {
+  width: 16px;
+  text-align: center;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.mps-presenter-name {
+  flex: 1;
+}
+
+.mps-retry-btn {
+  background: none;
+  border: none;
+  color: #1a73e8;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 2px 6px;
+}
+
+.mps-retry-btn:hover {
+  text-decoration: underline;
+}
+
+.mps-error {
+  color: #d93025;
+  font-size: 12px;
+  padding: 6px 0;
+  margin-top: 4px;
+}
